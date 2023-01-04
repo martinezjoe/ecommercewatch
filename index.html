@@ -1,0 +1,814 @@
+<html lang="es">
+  <head>
+    <!-- PAGINA DISEÑADA CON FINES ACADEMICOS -->
+    <!-- JOE MARTINEZ -->
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- TITULO  -->
+
+    <title>E-Commerce Watch</title>
+
+    <!-- FAVICON  -->
+
+    <link rel="shortcut icon" href="./imgs/favicon.png" type="image/x-icon" />
+
+    <!-- Boxicons -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+    <!-- ESTILOS CSS -->
+
+    <link rel="stylesheet" href="./estilos/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./estilos/estilos.css" />
+    <link rel="stylesheet" href="./estilos/normalize.css" />
+
+
+  </head>
+   
+  <body>
+
+    <!-- Header -->
+
+    <header class="header" id="header">
+
+      <nav class="nav container">
+        <a href="#" class="nav__logo">
+          <img src="./icons/watch.svg" class="nav__logo-icon"> Rolex
+        </a>
+
+        <div class="nav__menu" id="nav-menu">
+        
+          <ul class="nav__list">
+
+            <li class="nav__item">
+              <a href="#home" class="nav__link active-link"> Inicio </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#featured" class="nav__link"> Destacados </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#products" class="nav__link"> Productos </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#new" class="nav__link"> Nuevo </a>
+            </li>
+
+          </ul>
+
+          <div class="nav__close" id="nav-close">
+            <img src="./icons/equis.svg">
+          </div>
+
+        </div>
+
+        <div class="nav__btns">
+
+          <!-- Cambiar a modo oscuro  -->
+
+          <i class='bx bx-moon change-theme' id="theme-button"></i>
+
+          <div class="nav__shop" id="cart-shop">
+            <img src="./icons/shopping-bag.svg">
+          </div>
+
+          <div class="nav__toggle" id="nav-toggle">
+            <img src="./icons/grid.svg">
+          </div>
+
+
+        </div>
+      </nav>
+
+
+    </header>
+
+    <!-- Cart -->
+
+    <div class="cart" id="cart">
+      <img src="./icons/equis.svg" alt="equis-icon" class="cart__close" id="cart-close">
+
+      <h2 class="cart__title-center"> Mi carrito </h2>
+
+      <div class="cart__container">
+
+        <article class="cart__card">
+
+          <div class="cart__box">
+            <img src="./imgs/featured1.png" alt="reloj" class="cart__img">
+          </div>
+
+          <div class="cart__details">
+
+            <h3 class="cart__title"> Jazzmaster</h3>
+            <span class="cart__price">$879</span>
+
+            <div class="cart__amount">
+
+              <div class="cart__amount-content">
+
+                <span class="cart__amount-box">
+                  <img src="./icons/minus.svg" alt="minus-icon">
+                </span>
+
+                <span class="cart__amount-number">1</span>
+
+                <span class="cart__amount-box">
+                  <img src="./icons/plus.svg" alt="plus-icon">
+                </span>
+
+              </div>
+
+              <img src="./icons/trash.svg" class="cart__amount-trash" alt="trash-icon">
+
+            </div>
+
+          </div>
+
+        </article>
+
+        <article class="cart__card">
+
+          <div class="cart__box">
+            <img src="./imgs/featured2.png" alt="reloj" class="cart__img">
+          </div>
+
+          <div class="cart__details">
+
+            <h3 class="cart__title">Midd Watch</h3>
+            <span class="cart__price">$1.190</span>
+
+            <div class="cart__amount">
+
+              <div class="cart__amount-content">
+
+                <span class="cart__amount-box">
+                  <img src="./icons/minus.svg" alt="minus-icon">
+                </span>
+
+                <span class="cart__amount-number">1</span>
+
+                <span class="cart__amount-box">
+                  <img src="./icons/plus.svg" alt="plus-icon">
+                </span>
+
+              </div>
+
+              <img src="./icons/trash.svg" class="cart__amount-trash" alt="trash-icon">
+
+            </div>
+
+          </div>
+
+        </article>
+
+        <article class="cart__card">
+
+          <div class="cart__box">
+            <img src="./imgs/featured3.png" alt="reloj" class="cart__img">
+          </div>
+
+          <div class="cart__details">
+
+            <h3 class="cart__title">Rosa Longin</h3>
+            <span class="cart__price">$299</span>
+
+            <div class="cart__amount">
+
+              <div class="cart__amount-content">
+
+                <span class="cart__amount-box">
+                  <img src="./icons/minus.svg" alt="minus-icon">
+                </span>
+
+                <span class="cart__amount-number">1</span>
+
+                <span class="cart__amount-box">
+                  <img src="./icons/plus.svg" alt="plus-icon">
+                </span>
+
+              </div>
+
+              <img src="./icons/trash.svg" class="cart__amount-trash" alt="trash-icon">
+
+            </div>
+
+          </div>
+
+        </article>
+      </div>
+
+      <div class="cart__prices">
+        <span class="cart__prices-item">3 items</span>
+        <span class="cart__prices-total">$2.368</span>
+      </div>
+
+    </div>
+
+    <!-- Main -->
+    <main class="main">
+    
+      <!-- Home -->
+      <section class="home" id="home">
+
+        <div class="home__container container grid">
+
+          <div class="home__img-bg">
+            <img src="./imgs/home.png" class="home__img" alt="imagen-reloj">
+          </div>
+
+          <div class="home__social">
+            
+            <a href="https://www.facebook.com" target="_blank" class="home__social-link">
+              Facebook
+            </a>
+
+            <a href="https://www.twitter.com" target="_blank" class="home__social-link">
+              Twitter
+            </a>
+
+            <a href="https://www.instagram.com" target="_blank" class="home__social-link">
+              Instagram
+            </a>
+
+          </div>
+
+          <div class="home__data">
+            <h1 class="home__title">
+              NUEVOS RELOJES <br> NUEVA COLECCIÓN
+            </h1> 
+            <p class="home__description">
+              Nuevas perspectivas en el mercado hará que lo último y moderno sea más resaltante, quédate con lo diseñado a durar.
+            </p>
+            <span class="home__price">$ 799 </span>
+
+            <div class="home__btns">
+              <a href="#" class="button button--gray button--small">
+                Mirar más
+              </a>
+
+              <button class="button home__button"> AÑADIR AL CARRITO </button>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+
+      <!-- Featured  -->
+
+      <section class="featured section container" id="featured">
+        <h2 class="section__title">
+          Destacados
+        </h2>
+
+        <div class="featured__container grid">
+          
+          <article class="featured__card">
+            
+            <span class="featured__tag"> Venta </span>
+
+            <img src="./imgs/featured1.png" alt="imagen-reloj" class="featured__img">
+
+            <div class="featured__data">
+              <h3 class="featured__title"> Hamilton Watch </h3>
+
+              <span class="featured__price"> $599 </span>
+            </div>
+
+            <button class="button featured__button"> 
+              AÑADIR AL CARRITO
+            </button>
+
+          </article>
+
+          <article class="featured__card">
+            
+            <span class="featured__tag"> Venta </span>
+
+            <img src="./imgs/featured2.png" alt="imagen-reloj" class="featured__img">
+
+            <div class="featured__data">
+              <h3 class="featured__title"> Ingersoll </h3>
+
+              <span class="featured__price"> $399 </span>
+            </div>
+
+            <button class="button featured__button"> 
+              AÑADIR AL CARRITO
+            </button>
+
+          </article>
+
+          <article class="featured__card">
+            
+            <span class="featured__tag"> Venta </span>
+
+            <img src="./imgs/featured3.png" alt="imagen-reloj" class="featured__img">
+
+            <div class="featured__data">
+              <h3 class="featured__title"> Midd Watch</h3>
+
+              <span class="featured__price"> $1.190 </span>
+            </div>
+
+            <button class="button featured__button"> 
+              AÑADIR AL CARRITO
+            </button>
+
+          </article>
+        </div>
+
+      </section>
+
+      <!-- Story -->
+
+      <section class="story section container">
+        <div class="story__container grid">
+          <div class="story__data">
+            <h2 class="section__title story__section-title">
+              Nuestra Historia
+            </h2>
+
+            <h1 class="story__title">
+              En nosotros encontrarás <br>
+              un valioso tiempo
+            </h1>
+
+            <p class="story__description">
+              Lo más novedoso y reciente lo podrás encontrar con nosotros, lo que lleva a que su muñeca se vea espectacular con el 
+              diseño de un reloj
+            </p>
+
+            <a href="#" class="button button--small">Conocer más</a>
+          </div>
+
+          <div class="story__images">
+            <img src="./imgs/story.png" alt="imagen-reloj" class="story__img">
+
+            <div class="story__square"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Products -->
+
+      <section class="productos section container" id="products">
+
+        <h2 class="section__title">
+          Productos
+        </h2>
+
+        <div class="products__container grid">
+
+          <article class="products__card">
+            <img src="./imgs/product1.png" alt="imagen-reloj" class="products__img">
+
+            <h3 class="products__title">
+              Hamitol Rosa
+            </h3>
+
+            <span class="products__price">$99</span>
+
+            <button class="products__button">
+              <img src="./icons/shopping-bag-white.svg">
+            </button>
+
+          </article>
+
+          <article class="products__card">
+            <img src="./imgs/product2.png" alt="imagen-reloj" class="products__img">
+
+            <h3 class="products__title">
+              Piloto Kaki
+            </h3>
+
+            <span class="products__price">$299 </span>
+
+            <button class="products__button">
+              <img src="./icons/shopping-bag-white.svg">
+            </button>
+
+          </article>
+
+
+          <article class="products__card">
+            <img src="./imgs/product3.png" alt="imagen-reloj" class="products__img">
+
+            <h3 class="products__title">
+              Oscuro Jubilee
+            </h3>
+
+            <span class="products__price"> $599</span>
+
+            <button class="products__button">
+              <img src="./icons/shopping-bag-white.svg">
+            </button>
+
+          </article>
+
+          <article class="products__card">
+            <img src="./imgs/product4.png" alt="imagen-reloj" class="products__img">
+
+            <h3 class="products__title">
+              Fossil Automatic
+            </h3>
+
+            <span class="products__price">$799 </span>
+
+            <button class="products__button">
+              <img src="./icons/shopping-bag-white.svg">
+            </button>
+
+          </article>
+
+          <article class="products__card">
+            <img src="./imgs/product5.png" alt="imagen-reloj" class="products__img">
+
+            <h3 class="products__title">
+              M3 L'Duchen
+            </h3>
+
+            <span class="products__price"> $1299 </span>
+
+            <button class="products__button">
+              <img src="./icons/shopping-bag-white.svg">
+            </button>
+
+          </article>
+        </div>
+
+      </section>
+
+      <!-- Testimonial  -->
+
+      <section class="testimonial section container">
+
+        <h2 class="section__title">
+          Testimonios
+        </h2>
+      
+        <div class="testimonial__container grid">
+          
+          <div class="swiper testimonial-swiper">
+
+            <div class="swiper-wrapper">
+
+              <div class="testimonial__card swiper-slide">
+
+                <div class="testimonial__quote">
+                  <img src="./icons/quote.svg" alt="quote" >
+                </div>
+
+                <p class="testimonial__description">
+                  Realmente estoy encantado por la atención que me han dado, los relojes sin duda son una maravilla, sus
+                  diseños son increíbles, y por lo tanto estoy sumamente satisfecho. Les recomiendo comprar en esta tienda.
+
+                </p>
+
+                <h3 class="testimonial__date">
+                  04 de Enero, 2023
+                </h3>
+
+                <div class="testimonial__perfil">
+                  <img src="./imgs/profile-1.jpg" alt="persona-testimonio" class="testimonial__perfil-img">
+
+                  <div class="testimonial__perfil-data">
+                    <span class="testimonial__perfil-name">
+                      Miguel Benitez,
+                    </span>
+                    <span class="testimonial__perfil-detail">
+                      Caracas, Venezuela
+                    </span>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="testimonial__card swiper-slide">
+                <div class="testimonial__quote">
+                  <img src="./icons/quote.svg" alt="quote" >
+                </div>
+
+                <p class="testimonial__description">
+                  El envío fue rápido, llegó a mi domicilio sin ningún problema. La caja en la que venía el reloj es hermosa, un excelente detalle por parte de ellos. No hubo ningún problema al momento de comprar. 
+
+                </p>
+
+                <h3 class="testimonial__date">
+                  16 de Febrero, 2023
+                </h3>
+
+                <div class="testimonial__perfil">
+                  <img src="./imgs/profile-2.jpg" alt="persona-testimonio" class="testimonial__perfil-img">
+
+                  <div class="testimonial__perfil-data">
+                    <span class="testimonial__perfil-name">
+                      Rafael Bermudez,
+                    </span>
+                    <span class="testimonial__perfil-detail">
+                      San Antonio de los Altos, Venezuela
+                    </span>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="testimonial__card swiper-slide">
+                <div class="testimonial__quote">
+                  <img src="./icons/quote.svg" alt="quote" >
+                </div>
+
+                <p class="testimonial__description">
+                  Fue la mejor decisión comprar aquí. Le compré un reloj a mi padre, y le queda espectacular, es hermoso, a mí me encantó demasiado los detalles que vienen al momento.
+
+                </p>
+
+                <h3 class="testimonial__date">
+                  19 de Enero, 2023
+                </h3>
+
+                <div class="testimonial__perfil">
+                  <img src="./imgs/profile-3.jpg" alt="persona-testimonio" class="testimonial__perfil-img">
+
+                  <div class="testimonial__perfil-data">
+                    <span class="testimonial__perfil-name">
+                      Arianna Gonzalez,
+                    </span>
+                    <span class="testimonial__perfil-detail">
+                      Valencia, Venezuela
+                    </span>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="swiper-button-next">
+              <img src="./icons/arrow-right.svg" alt="flecha-der">
+            </div>
+
+           <div class="swiper-button-prev">
+              <img src="./icons/arrow-left.svg" alt="flecha-izq">
+            </div>
+
+          </div>
+
+          <div class="testimonial__images">
+            <div class="testimonial__square"></div>
+
+            <img src="./imgs/testimonial.png" alt="foto-reloj" class="testimonial__img">
+          </div>
+
+        </div>
+
+      </section>
+
+      <!-- The New Products -->
+
+      <section class="new section container" id="new">
+        
+        <h2 class="section__title">
+          Lo más nuevo
+        </h2>
+
+        <div class="new__container">
+
+          <div class="swiper new-swiper">
+
+            <div class="swiper-wrapper container-new">
+
+              <article class="new__card swiper-slide">
+                <span class="new__tag">Nuevo</span>
+
+                <img src="./imgs/new1.png" alt="reloj" class="new__img">
+
+                <div class="new__data">
+
+                  <h3 class="new_-title"> Rosa Longin</h3>
+                  <span class="new__price"> $299 </span>
+
+                </div>
+
+                <button class="button new__button"> AÑADIR AL CARRITO </button>
+
+              </article>
+
+              <article class="new__card swiper-slide">
+                <span class="new__tag">Nuevo</span>
+
+                <img src="./imgs/new2.png" alt="reloj" class="new__img">
+
+                <div class="new__data">
+
+                  <h3 class="new_-title"> Jazzmaster </h3>
+                  <span class="new__price"> $879 </span>
+
+                </div>
+
+                <button class="button new__button"> AÑADIR AL CARRITO </button>
+
+              </article>
+
+              <article class="new__card swiper-slide">
+                <span class="new__tag">Nuevo</span>
+
+                <img src="./imgs/new3.png" alt="reloj" class="new__img">
+
+                <div class="new__data">
+
+                  <h3 class="new_-title"> Gold Hamilton   </h3>
+                  <span class="new__price"> $1.275 </span>
+
+                </div>
+
+                <button class="button new__button"> AÑADIR AL CARRITO </button>
+
+              </article>
+
+              <article class="new__card swiper-slide">
+                <span class="new__tag">Nuevo</span>
+
+                <img src="./imgs/new4.png" alt="reloj" class="new__img">
+
+                <div class="new__data">
+
+                  <h3 class="new_-title">  Rosa Portuguesa </h3>
+                  <span class="new__price"> $499 </span>
+
+                </div>
+
+                <button class="button new__button"> AÑADIR AL CARRITO </button>
+
+              </article>
+
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Newsletter -->
+
+      <section class="newsletter section container">
+        <div class="newsletter__bg grid">
+          <div>
+            <h2 class="newsletter__title">
+              Suscríbete a Nuestra <br>
+              Newsletter
+            </h2>
+
+            <p class="newsletter__description">
+              ¡No te pierdas de nuestras ofertas semanales ni tampoco de los nuevos productos que están por llegar!
+            </p>
+
+          </div>
+
+          <form action="" class="newsletter__subscribe"> 
+
+            <input type="email" placeholder="Escribe tu correo" class="newsletter__input">
+
+            <button class="button">
+              SUSCRIBIR
+            </button>
+
+          </form>
+
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="footer section">
+
+      <div class="footer__container container grid">
+
+        <div class="footer__content">
+
+          <h3 class="footer__title">
+            Información
+          </h3>
+
+          <ul class="footer__list">
+            <li>Miranda - Venezuela</li>
+            <li>San Antonio de los Altos</li>
+            <li>(+58) 424 - 1796708</li>
+          </ul>
+
+        </div>
+
+        <div class="footer__content">
+         
+          <h3 class="footer__title">
+            Sobre Nosotros
+          </h3>
+
+          <ul class="footer__links">
+            
+            <li>
+              <a href="#" class="footer__link">
+                Soporte 
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="footer__link">
+                Atención al Cliente
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="footer__link">
+                Sobre Nosotros 
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="footer__link">
+                Marca Privada
+              </a>
+            </li>
+
+          </ul>
+        </div>
+
+        <div class="footer__content">
+         
+          <h3 class="footer__title">
+            Otros Productos
+          </h3>
+
+          <ul class="footer__links">
+            
+            <li>
+              <a href="#" class="footer__link"> Bicicletas </a>
+            </li>
+
+            <li>
+              <a href="#" class="footer__link"> Bicicletas Montañeras </a>
+            </li>
+
+            <li>
+              <a href="#" class="footer__link"> Bicicletas Eléctricas </a>
+            </li>
+
+            <li>
+              <a href="#" class="footer__link">Accesorios </a>
+            </li>
+
+          </ul>
+        </div>
+
+        <div class="footer__content">
+         
+          <h3 class="footer__title">
+            Redes Sociales
+          </h3>
+
+          <ul class="footer__social">
+            
+            <a href="https:://www.facebook.com" target="_blank" class="footer__social-link">
+              <img src="./icons/facebook.svg" alt="facebook-icon">
+            </a>
+
+            <a href="https:://www.instagram.com" target="_blank" class="footer__social-link">
+              <img src="./icons/instagram.svg" alt="instagram-icon">
+            </a>
+
+            <a href="https:://www.twitter.com" target="_blank"class="footer__social-link">
+              <img src="./icons/twitter.svg" alt="twitter-icon">
+            </a>
+
+          </ul>
+        </div>
+
+      </div>
+
+      <span class="footer__copy"> &#169; Dynamic Club. Todos los derechos reservados </span>
+
+    </footer>
+
+
+    <!-- Scroll UP  -->
+  
+    <a href="#" class="scrollup" id="scroll-up">
+      <img src="./icons/arrow-up.svg" alt="arrow-up">
+    </a>
+    
+    <!-- Swiper JS -->
+
+    <script src="./javascript/swiper-bundle.min.js"></script>
+
+    <!--Main JS -->
+
+    <script src="./javascript/main.js"></script>
+
+  </body>
+</html>
